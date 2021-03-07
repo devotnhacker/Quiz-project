@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz page</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body onload=" codeAddress() ">
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div class="header">
+                <div class="question-number"></div>
+                <h1 id="question">What is the most popular programming language ?</h1>            
+                <div class="btn-flex">
+                    <a href="index.html"><button id="home-btn" class="btn"><i class="fas fa-home"></i> Home</button> </a>
+                    <button id="next-btn" class="btn">Next <i class="fas fa-arrow-alt-circle-right"></i></button>
+                </div>
+            </div>
+            <form action="stracture.js">
+                <div class="choice-container">
+                    <h5 class="choice-text" tabIndex="1">Choice1</h5>
+                </div>
+                <div class="choice-container">
+                    <h5 class="choice-text" tabIndex="2">Choice2</h5>
+                </div>
+                <div class="choice-container">
+                    <h5 class="choice-text" tabIndex="3">Choice3</h5>
+                </div>
+                <div class="choice-container">
+                    <h5 class="choice-text" tabIndex="4">Choice4</h5>
+                </div>
+            </form>
+        </div>
+        <div class="hud">
+            <div id="hud-score">
+                <div class="score-str">
+                    <p class="hud-prefix">
+                       Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0 
+                    </h1>
+                </div>
+            </div>
+            <div id="hud-ansr" >
+                <button id="ansr-btn" class="btn">Answer</button>
+            </div>
+        </div>
+    </div>
+    <script src="try.js"></script>
+</body>
+</html>

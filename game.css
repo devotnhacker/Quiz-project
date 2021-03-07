@@ -1,0 +1,135 @@
+:root {
+    background-image: linear-gradient(to top left,  rgb(2, 124, 133) , rgb(214, 1, 1),  orange );
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.container {
+    -webkit-animation: fadein 2s;
+} 
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Square', cursive;
+}
+
+.header p {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.header h1{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.header {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    margin: 30px auto;
+    padding: 0rem;
+}
+
+.btn-flex {
+    display: inline-flex;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform:scale(1.1) ;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+}
+
+#back-btn {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+#next-btn {
+    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102,255) 100%);
+}
+
+#ansr-btn {
+    background-color: rgb(11,223,36) ;
+    width: 200px;
+    height: 70px;
+    margin-top: 40px;
+}
+
+.choice-container {
+    text-align: left;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,.2);
+    font-size: 2.5rem;
+    min-width: 60rem;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103,247, 0.5);
+    transform: scale(1.01);
+    transform: transform 100ms;
+}
+
+.choice-text {
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#score {
+    font-size: 70px;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 1rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11,223,36) ;
+    width: 0ù;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
+

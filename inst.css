@@ -1,0 +1,77 @@
+:root {
+    background-image: linear-gradient(to top left,  rgb(2, 124, 133) , rgb(214, 1, 1),  orange );
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.inst-box {
+    -webkit-animation: fadein 2s;
+}
+
+body {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Square', cursive;
+    color: #000;
+}
+
+.inst-box {
+    max-width: 1000px;
+    height: 397px;
+    margin: 11% auto 20% ;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    font-size: 30px;
+}
+
+.inst-box #box-content {
+    text-align: left;
+    height: 300px;
+    font-size: 1.5rem;
+    height: 300px;
+    background: #fff;
+    color: #000;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+.inst-box h3 {
+    padding: 1rem 1.5rem calc(1rem + 10px);
+    margin-bottom: -10px;
+    border-radius: 8px;
+    background: rgba(0,0,0,.2);
+}
+
+.inst-box h3 i {
+    color: #000000;
+}
+
+.back-btn {
+    width: 180px;
+    margin: 10px 41% ;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    transform: scale(1.1);
+}
+
+
